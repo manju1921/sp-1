@@ -1,0 +1,68 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+<h2> Form been submitted with below details </h2>
+<p>
+    IDPService Name : {{_idpservicename}} <br>
+    Vertical : {{_vertical}} <br>
+    Product-Owner : {{_productowner}} <br>
+    Engineering-Manager : {{_engineeringmanager}} <br>
+    LOB-Head : {{_lobhead}} <br>
+    PRD-Doc : {{_prddoc}} <br>
+    Design-Doc : {{_designdoc}} <br>
+    Architect : {{_architect}} <br>
+    Team-Email : {{_teamemail}} <br>
+    List of Technologies Used : {{_listtech}} <br>
+    Colo to be deployed on : {{_colos}} <br>
+    Colo list in string : {{_cololist}} <br>
+    Expected QPS in individual colo : {{_expectedqps}} <br>
+    <!-- Expected QPS in individual colo : {{_concat}} <br> -->
+    External traffic to the application : {{_externalYesno}} <br>
+    Infosec Reviewed : {{_Infosecyesno}} <br>
+    Infosec Jira : {{_Infosecjira}} <br>
+    Domain URI : {{_domainuri}} <br>
+    Endpoint Certificate : {{_certendpoint}} <br>
+    Request Split : {{_requestplit}} <br>
+    UMP : {{_UMP}} <br>
+    UMP Traffic : {{_UMPtraffic}} <br>
+    QA Deployed : {{_QAdeployed}} <br>
+    Appurl : {{_Appurl}} <br>
+    Hawkeyelnk : {{_Hawkeyelnk}} <br>
+    Instance per colo : {{_Instancecolo}} <br>
+    Hardware per Instance : {{_hwspecs}} <br>
+    Network Bandwidth per Instance : {{_nwbandwidth}} <br>
+    Multithreaded : {{_multithread}} <br>
+    Concurrency : {{_concurrency}} <br>
+    Docker Link : {{_dockerlnk}} <br>
+    Healthcheck Git Link : {{_healthchecklnk}} <br>
+    Healthcheck URL : {{_healthcheckurl}} <br>
+    Upstream : {{_upstream}} <br>
+    Downstream : {{_downstream}} <br>
+    Service Type : {{_servicetype}} <br>
+    Mesos Complanant : {{_mesoscompl}} <br>
+    Justification for Non mesos : {{_justification}} <br>
+    No. of ports required : {{_ports}} <br>
+    No. of Static ports required : {{_staticports}} <br>
+    No. of Dynamic ports required : {{_dynamicports}} <br>
+    Stateful Properties : {{_statefulproperties}} <br>
+    Autostart of service : {{_autostart}} <br>
+    Stateful Ports : {{_statefulports}} <br>
+    Port No's : {{_portno}} <br>
+    ZK discoverable Path : {{_zkdiscoverable}} <br>
+    Any Setup required : {{_specialsetup}} <br>
+    Important Logs : {{_implogs}} <br>
+    Log Rotation : {{_logrotation}} <br>
+    Exception Count : {{_exceptioncount}} <br>
+    Application Start Time : {{_starttime}} <br>
+    Application Stop Time : {{_gracetime}} <br>
+    Healthcheck Config : {{_healthcheckconfig}} <br>
+    Drain-inflight-traffic : {{_draininflight}} <br>
+    Crash Analysis : {{_crashanalysis}} <br>
+    Hawkeye End Point : {{_hawkeyeendpoint}} <br>
+    Metrics sent per Instance : {{_metricsinstance}} <br>
+    Top Metrics : {{_topmetrics}} <br>
+    Top Business Metrics : {{_topbusinessmetrics}} <br>
+    Thresholds-for-alerts : {{_alertthreshold}} <br>
+    Pagerduty Enabled : {{_pagerduty}}
+</p>
+{% endblock %}

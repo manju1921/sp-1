@@ -1,0 +1,46 @@
+.form-holder{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background-color:#8cbdc7;
+}
+
+.form-holder .container {
+     padding: 10px 5%;
+     background-color:#fff;
+     -webkit-box-shadow: -2px 2px 18px -3px rgba(0,0,0,0.61);
+     -moz-box-shadow: -2px 2px 18px -3px rgba(0,0,0,0.61);
+     box-shadow: -2px 2px 18px -3px rgba(0,0,0,0.61);
+}
+
+.asterisk::after {
+     content: "*" ;
+     color: red ;
+}
+
+.alert{
+  opacity:0;
+  display: none;
+}
+
+.alert.show{
+  opacity:1;
+  display: table-row!important;
+}
+
+.error{
+  font-size: 10px; 
+  color: #e18c28;
+}
+
+.alert-Infosec.show .alert{
+  opacity:1;
+  display: table-row!important;
+}
+
+.width50{
+  width: 50%;
+}
+.width100{
+  width: 100%;
+}

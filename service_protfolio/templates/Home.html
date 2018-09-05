@@ -1,0 +1,45 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+    <div class="row form-holder">
+        <div class="container page-header col-xs-12 col-sm-12 col-md-10 col-lg-10">
+            <form action = "http://localhost:8080/showform" method = "post">
+                <div class="form-group">
+                    <table class="table table-striped table-responsive">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <label> View Submitted Form </label>
+                            </td>
+                            <td>
+                                <select class="selectpicker form-control required-select"
+                                        name="fn-subform" id="fn-subform" required="">
+                                    <option selected> Choose Submitted form </option>
+                                    {% for i in idplist %}
+                                    <option value="{{ i.idpservicename }}">{{ i.idpservicename }}</option>
+                                    {% endfor %}
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <div class="submit">
+                                    <button id="submitForm" class="btn btn-primary btn-primary pull-right">
+                                        Show Form </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label> For New Service On-boarding </label>
+                            </td>
+                            <td colspan="2">
+                                <a href="/operability/" class="btn btn-primary"> Click Here</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
